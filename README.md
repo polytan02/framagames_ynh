@@ -1,4 +1,5 @@
-Multi Instances Web App
+Set of games from Framagames
 -------------------
 
-No FTP Support
+sources are from here : https://git.framasoft.org/framasoft/framagames.git
+
