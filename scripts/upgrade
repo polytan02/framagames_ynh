@@ -92,6 +92,14 @@ ynh_script_progression --message="Upgrading NGINX web server configuration..."
 ynh_add_nginx_config
 
 #=================================================
+# CREATE DEDICATED USER
+#=================================================
+ynh_script_progression --message="Making sure dedicated system user exists..."
+
+# Create a dedicated user (if not existing)
+ynh_system_user_create --username=$app
+
+#=================================================
 # PHP-FPM CONFIGURATION
 #=================================================
 ynh_script_progression --message="Upgrading PHP-FPM configuration..."
@@ -107,8 +115,8 @@ ynh_add_fpm_config
 ynh_script_progression --message="Securing files and directories..."
 
 # Set permissions on app files
+chown -hR $app: $final_path
 chmod -R 775 $final_path
-chown -hR www-data:www-data $final_path
 
 #=================================================
 # RELOAD NGINX
@@ -121,4 +129,4 @@ ynh_systemd_action --service_name=nginx --action=reload
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Upgrade of $app completed"
+ynh_script_progression --message="Upgrade of $app completed" --last
