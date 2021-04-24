@@ -1,8 +1,6 @@
 # See here for more information
 # https://github.com/YunoHost/package_check#syntax-check_process-file
 
-# Move this file from check_process.default to check_process when you have filled it.
-
 ;; Test complet
     ; Manifest
 		domain="domain.tld"	(DOMAIN)
@@ -17,7 +15,6 @@
 		setup_private=1
 		setup_public=1
 		upgrade=1
-		upgrade=1	from_commit=bd2c87a6fd4212771f9c06e7965598a5ea744ffc
 		backup_restore=1
 		multi_instance=1
 		change_url=1
