@@ -13,8 +13,8 @@ Set of games from Framagames
 
 #### Supported architectures
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/framagames%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/framagames/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/framagames%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/framagames/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/framagames.svg)](https://ci-apps.yunohost.org/ci/apps/framagames/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/framagames.svg)](https://ci-apps-arm.yunohost.org/ci/apps/framagames/)
 
 ## Links
 
